@@ -1,3 +1,4 @@
+/* General styles */
 body {
     font-size: 16px;
     color: #2b283a;
@@ -5,11 +6,7 @@ body {
     margin: 0;
 }
 
-header {
-    background-color: #5f29a3;
-    padding: 45px 0px;
-}
-
+/* Typography */
 h1 {
     color: whitesmoke;
     font-size: 36px;
@@ -26,6 +23,11 @@ h3 {
     padding: 0 10px;
     margin: 0;
 }
+/*Layout-s*/
+header {
+    background-color: #5f29a3;
+    padding: 45px 0px;
+}
 
 .block {
     width: 620px;
@@ -39,6 +41,8 @@ section {
 .main-image {
     width: 100%;
 }
+
+/*Links*/
 
 a {
     color: #ef5839;
