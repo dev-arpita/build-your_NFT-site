@@ -40,32 +40,6 @@ a:active {
 
 /* layout */
 
-/*
-Challenge:
-1. Change the background color of this
-   section, remembering to make sure
-   the color covers 100% of the width.
-2. Change the font color for all text in
-   this section.
-*/
-
-.crypto-section {
-    background: #5f29a3;
-    color: whitesmoke;
-}
-
-.crypto-section img {
-    border-radius: 10px;
-    height: 300px;
-    margin-right: 10px;
-}
-
-.crypto-img {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-
 header {
     background-color: #5f29a3;
     padding: 45px 0;
@@ -74,9 +48,10 @@ header {
 section {
     padding: 45px 0;
 }
+
 .section-two {
-    background: #5f29a3;
     color: whitesmoke;
+    background-color: #5f29a3;
 }
 
 .block {
@@ -88,11 +63,27 @@ section {
     width: 100%;
 }
 
-.feature-img {
-    width: 300px;
-    border-radius: 4.6px;
-}
-.section-two__image-container {
+.section-two-image-container {
     display: flex;
     justify-content: space-between;
 }
+
+.feature-image {
+    width: 300px;
+    border-radius: 4.6px;
+}
+
+footer {
+    text-align: center;
+    padding: 45px 0;
+    color: #5f29a3;
+}
+
+/*
+Challenge:
+1. Center the footer's text horizontally.
+2. Give the text space top and bottom.
+   ⚠️ Don't add margin! Look at sections
+   and header for inspiration.
+3. Give the text the correct color.
+*/
