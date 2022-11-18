@@ -1,136 +1,75 @@
 body {
-    color: #2b283a;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-}
-
-/* ----- TYPOGRAPHY ----- */
-
-h1,
-h3 {
-    margin: 0;
+    color: #202945;
+    background-color: #faf9f6;
 }
 
 h1 {
-    color: whitesmoke;
-    font-size: 2.25rem;
-}
-
-h2 {
-    color: #451c7a;
-    font-size: 1.75rem;
-    margin-top: 0;
-}
-
-h3 {
-    font-size: 1.25rem;
-}
-
-/*
-  Challenge:
-   - Set the line-height of the paragraph to a unitless value
-     that’s 150% larger than the font size
-*/
-
-p {
-    line-height: 1.5;
-}
-
-.subheading {
-    display: block;
-    font-size: 1.25rem;
-    color: #d0aaff;
-}
-
-.section-two h2 {
-    color: inherit;
-}
-
-/* ----- LINKS ----- */
-
-a {
-    color: #ef5839;
-    text-decoration: underline dotted;
-}
-
-a:hover,
-a:active {
-    color: #d4b44c;
-}
-
-.btn {
-    font-size: 1.125rem;
-    font-weight: 500;
-    text-decoration: none;
-    display: inline-block;
-    padding: 0.5em 1em;
-    margin-right: 0.5em;
-    margin-bottom: 1em;
-    border-radius: 4.6px;
-}
-
-.btn-dark {
-    color: whitesmoke;
-    background: #5f29a3;
-}
-
-.btn-mid {
-    color: #5f29a3;
-    background: #f0e0ff;
-}
-
-.btn-light {
-    color: #5f29a3;
-    background: whitesmoke;
-}
-
-.btn:hover,
-.btn:active {
-    color: #2b238a;
-    background-color: #f3e885;
-}
-
-/* ----- LAYOUT ----- */
-
-header,
-section,
-footer {
-    padding: 2.875em 0;
-}
-
-header,
-.section-two {
-    background-color: #5f29a3;
-}
-
-.section-two {
-    color: whitesmoke;
+    font-family: 'Anton', sans-serif;
+    font-size: 2.75rem;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
 .container {
-    width: 90%;
-    max-width: 800px;
+    width: 85%;
+    max-width: 460px;
     margin: 0 auto;
 }
 
-.main-image {
-    width: 100%;
+.joke {
+    padding: 1.5em 0;
+    border-bottom: solid 1px;
+}
+
+.joke:last-child {
+    border: none;
+}
+
+.question {
+    font-size: 1.125rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.punchline {
+    display: none;
+    margin-bottom: 0;
+}
+
+.joke:hover .punchline {
     display: block;
-    max-width: 640px;
-    margin: 0 auto 2em;
 }
 
-.section-two-image-container {
-    display: flex;
-    justify-content: space-between;
+/* ----- MEDIA QUERIES ----- */
+
+@media (max-width: 499px) {
+    body {
+        color: #faf9f6;
+        background-color: #202945;
+    }
+
+    .punchline {
+        display: block;
+    }
 }
 
-.feature-image {
-    width: 48.8%;
-    border-radius: 4.6px;
+/*
+ Challenge:
+   - Create a media query that targets a minimum
+     browser width of 500px
+   - In the media query, update the body's color and background
+*/
+
+@media (min-width: 500px) and (max-width: 799px) {
+    body {
+        color: aliceblue;
+        background-color: cornflowerblue;
+    }
 }
 
-footer {
-    text-align: center;
-    color: #5f29a3;
+@media (min-width: 800px) {
+    h1 {
+        font-size: 3.5rem;
+    }
 }
