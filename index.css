@@ -13,17 +13,30 @@ h3 {
 
 h1 {
     color: whitesmoke;
-    font-size: 2.25rem;
+    font-size: 1.75rem;
 }
+
+/*
+  Challenge: Responsive text
+    - h2:
+        - Initial size: rem value equal to 22px
+        - At 768px: increase to 1.75rem
+    - .subheading:
+        - Initial size: suitable for smaller screens
+        - At 768px: increase to 1.25rem
+    - Paragraphs:
+        - At 768px: increase to rem value equal to 18px
+*/
 
 h2 {
     color: #451c7a;
-    font-size: 1.75rem;
+    font-size: 1.375em;
+    /* update initial font-size */
     margin-top: 0;
 }
 
 h3 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
 }
 
 p {
@@ -33,6 +46,7 @@ p {
 .subheading {
     display: block;
     font-size: 1.25rem;
+    /* update initial font-size */
     color: #d0aaff;
 }
 
@@ -51,13 +65,6 @@ a:hover,
 a:active {
     color: #d4b44c;
 }
-
-/*
-  Challenge:
-    - On narrow screens, each button should take up the full width
-      of their container
-    - The buttons should display on the same row only at the 768px breakpoint
-*/
 
 .btn {
     font-size: 1.125rem;
@@ -156,5 +163,21 @@ footer {
     .btn {
         display: inline-block;
         margin-right: 0.5em;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 1.125em;
     }
 }
